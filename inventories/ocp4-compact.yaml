@@ -1,7 +1,7 @@
 all:
   vars:
-    name: ocp4
-    baseDomain: gmbros.local
+    name: mgmt1
+    baseDomain: next.gmbros.local
 
     controlPlaneReplicas: 3
     computeReplicas: 0
@@ -10,16 +10,16 @@ all:
     machineNetwork:
       cidr: 10.0.0.0/24
       gateway: 10.0.0.1
-      firstIP: 10.0.0.202
-      firstMAC: 00:50:56:88:5e:02
-      rendezvousIP: 10.0.0.202
+      firstIP: 10.0.0.213
+      firstMAC: 00:50:56:88:5e:13
+      rendezvousIP: 10.0.0.213
 
-    ingressVIP: 10.0.0.200
-    apiVIP: 10.0.0.201
+    ingressVIP: 10.0.0.211
+    apiVIP: 10.0.0.212
 
     pullSecret: fromVault
     sshKey: |
-      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxRsq/E4cnWht8Wi0Ua8XpS0dvkJdWJVgASX359JIhpHN6PZ45jCKSUhdAgiX4CVeP3GolXTX5FeBw3LXXgav5fKAKzpDr9O/O15YIpb/xFVhEgy1sJuwhx6h0PuoB0EeZGsV75opAL4LN+haAgwaaQD9fW2jISSdTzsVaeGa8bSIMTEowkuWiVQvMPitlt9hPbDnO5MTak8ZCFt9OH6qWwEHO0jcO8+Kupfl29V3s7o0GNICEpdoZ7JRa5Y0fnnHVsirfGklbnA9HZCSMYUt+kbf3K473ssoV2R0x/4/+iW6Qxc09Gwix+DZfoPdbDz4yPTNGJMG2RgMG4aTT+J/dmY6qY71QrAw6/jaflQP4+DTyc4MgB0d3sRRKMncHPSnLjWwDQoyiu2DwNq4hpQmg3qb9UnNzEaiZnPZfMQqlA56E0l92nygc+zQS0I0LD3ENQK2HS9V5HwGtCCDVx8PObV5RjmCQm93inetDERcPWHwGTD9fJF8HbOppy1YQQ6U= admin@localhost.localdomain
+      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH18nA6Y6UersdkVMssKBxR7Ojs9Bj2rFGF7Qj/JZxvANviBFecVMw8jZf1zLcf1t0cAXYYKHsand4rM3/6WX8AEZJf/uSeLBxZ7OsJBZ+kQxadhdLHcBpNuIL3I4poUkEUnzG0wtAAWbmviyJYynMseoL2O0hS+UkWYvBLCG5qeQXXQDB69xNjCHPBv+1dVVIloO84qstWcAmv5lVL2SC7mrVXAygZeGuSTcYlzn9dzZvhOWHnIl9DFoj9pDEicO5/B9PvPCqx+22DQ1pEElHPRQVSB7mLVs3Cl1gpAcZvF+kB2LgLwRtLTnFJqXS+5FJ3zSsU+2d1sh6f4snwIuR jtovarro@bastion1
 
     vcenter:
       hostname: fromVault

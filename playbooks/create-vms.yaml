@@ -16,7 +16,7 @@
       password: "{{ vcenter.password }}"
       datacenter: "{{ vcenter.datacenter }}"
       validate_certs: no
-      folder: "/{{ vcenter.datacenter }}/vm/"
+      folder: "/{{ vcenter.datacenter }}/vm/users/jtovarro/"
       guest_id: "rhel9_64Guest"
       name: "node{{ '%02d'|format(loop) }}.{{ name }}.{{ baseDomain }}"
       state: "{{ state }}"
