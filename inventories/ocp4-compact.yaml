@@ -4,7 +4,7 @@ all:
     baseDomain: next.gmbros.local
 
     controlPlaneReplicas: 3
-    computeReplicas: 0
+    computeReplicas: 1
 
     networkType: OVNKubernetes
     machineNetwork:
@@ -29,11 +29,19 @@ all:
 
     vms:
       controlPlaneData:
-        cpu: 8
-        memory: 16384
+        cpu: 6
+        memory: 32000
         disk:
-        - 100
+        - 150
         - 50
         network: Routed Network
         datastore: esx2-datastore
-      computeData: []
+      computeData:
+        cpu: 6
+        memory: 32000
+        disk:
+        - 150
+        - 50
+        network: Routed Network
+        datastore: esx2-datastore2
+
