@@ -23,7 +23,7 @@ hosts:
   - name: ens192
     macAddress: {{ current_mac }}
   rootDeviceHints:
-    deviceName: "/dev/sda"
+    deviceName: "/dev/disk/by-path/pci-0000:03:00.0-scsi-0:0:0:0"
   networkConfig:
     interfaces:
     - name: ens192
