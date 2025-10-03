@@ -8,14 +8,14 @@ all:
 
     networkType: OVNKubernetes
     machineNetwork:
-      cidr: 10.0.0.0/24
-      gateway: 10.0.0.1
-      firstIP: 10.0.0.213
-      firstMAC: 00:50:56:88:5e:02
-      rendezvousIP: 10.0.0.213
+      cidr: 10.12.0.0/24
+      gateway: 10.12.0.1
+      firstIP: 10.12.0.213
+      firstMAC: 00:50:56:88:5e:13
+      rendezvousIP: 10.12.0.213
 
-    ingressVIP: 10.0.0.211
-    apiVIP: 10.0.0.212
+    ingressVIP: 10.12.0.211
+    apiVIP: 10.12.0.212
 
     pullSecret: fromVault
     sshKey: |
@@ -34,7 +34,7 @@ all:
         disk:
         - 150
         - 50
-        network: Routed Network
+        network: VM Routed Network
         datastore: esx2-datastore1
       computeData:
         cpu: 6
@@ -42,6 +42,6 @@ all:
         disk:
         - 150
         - 50
-        network: Routed Network
+        network: VM Routed Network
         datastore: esx2-datastore2
 
