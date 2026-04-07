@@ -26,7 +26,7 @@ hosts:
 {% endfor %}
 {% endif %}
   rootDeviceHints:
-    deviceName: /dev/sda
+    deviceName: "/dev/disk/by-path/pci-0000:03:00.0-scsi-0:0:0:0"
   networkConfig:
 {% if network_config %}
 {% if network_config.interfaces %}
